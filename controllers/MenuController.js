@@ -67,7 +67,7 @@ module.exports = class MenuController {
   }
 
   remindMe(){
-    
+    return 'Learning is a life-long pursuit'
   }
 
 }
