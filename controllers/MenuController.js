@@ -1,4 +1,5 @@
-const inquirer = require('inquirer');
+const inquirer = require("inquirer");
+const ContactController = require("./ContactController");
 
 module.exports = class MenuController {
   constructor(){
@@ -13,9 +14,10 @@ module.exports = class MenuController {
         "Exit"
       ]
     }
-  ];
-  this.contacts = [];
+  ]
+  this.book = new ContactController();
   }
+
   main(){
     console.log(`Welcome to AddressBloc!`);
     inquirer.prompt(this.mainMenuQuestions).then((response) => {
