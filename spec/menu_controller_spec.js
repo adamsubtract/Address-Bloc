@@ -1,15 +1,10 @@
-const MenuController = require("../controllers/MenuController");
+ const MenuController = require("../controllers/MenuController");
 
-describe("MenuController", () => {
+// #1
+ describe("MenuController", () => {
 
-    beforeEach(function(){
-        menu = new MenuController();
+   beforeEach(() => {
+      this.menu = new MenuController();
     });
 
-    describe('remindMe function', () => {
-        it('should return a string', () => {
-          expect(menu.remindMe()).toBe('Learning is a life-long pursuit');
-        })
-    });
-
-});
+ });
